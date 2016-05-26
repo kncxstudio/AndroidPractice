@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/top_songs"
+        android:title="热榜推荐"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/search_songs"
+        android:title="搜索"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/exit"
+        android:title="退出"
+        android:checkable="true"/>
+</menu>

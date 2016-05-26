@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iboxshare.qqmusiclight.MainActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_default"/>
+
+    <!--DrawerLayout-->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/activity_main_drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--主布局-->
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/activity_main_coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/activity_top_songs" />
+        </android.support.design.widget.CoordinatorLayout>
+        <!--侧滑菜单-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/activity_main_navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity='start'
+            app:menu="@menu/slide_menu"/>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
