@@ -23,9 +23,11 @@ public class SongInfoAdapter extends RecyclerView.Adapter<SongInfoVH> implements
     private RecyclerViewOnClickListener recyclerViewOnClickListener = null;
     private SongInfoVH mViewHolder;
     private static ViewGroup mViewGroup;
+
     public SongInfoAdapter(List<SongInfo> list){
         songList = list;
     }
+
     @Override
     public SongInfoVH onCreateViewHolder(ViewGroup parent, int viewType) {
         mViewGroup = parent;
@@ -38,10 +40,10 @@ public class SongInfoAdapter extends RecyclerView.Adapter<SongInfoVH> implements
     @Override
     public void onBindViewHolder(SongInfoVH holder, int position) {
         mViewHolder = holder;
-        mViewHolder.getSongName().setText(songList.get(position).getSongName());
-        mViewHolder.getSingerName().setText(songList.get(position).getSingerName());
-        mViewHolder.getAlbumName().setText(songList.get(position).getAlbumName());
-        Glide.with(mViewGroup.getContext()).load(songList.get(position).getAlbumImgUrl()).into(mViewHolder.getAlbumImg());
+        mViewHolder.getSongName().setText(songList.get(position).getSongname());
+        mViewHolder.getSingerName().setText(songList.get(position).getSingername());
+        //mViewHolder.getAlbumName().setText(songList.get(position).get);
+        Glide.with(mViewGroup.getContext()).load(songList.get(position).getAlbumpic_small()).into(mViewHolder.getAlbumImg());
 
     }
     @Override

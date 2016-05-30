@@ -27,7 +27,6 @@ public class PostTool {
                 .post(requestBody)
                 .build();
         Response response = okHttpClient.newCall(request).execute();
-        System.out.print("111111111111111111111111111");
         return response.body().string();
 
     }
