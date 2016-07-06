@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="33dp"
+        android:paddingRight="33dp"
+        android:paddingTop="33dp">
+        <EditText
+            android:id="@+id/searchSongs_searchET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入歌名,歌手名或者专辑名"/>
+        <Button
+            android:id="@+id/searchSongs_searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

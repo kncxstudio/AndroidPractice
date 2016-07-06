@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.iboxshare.qqmusiclight.MainActivity"
+    tools:context=".TopSongs"
     android:orientation="vertical">
 
     <include layout="@layout/toolbar_default"/>
@@ -16,12 +16,10 @@
         android:layout_height="match_parent">
 
         <!--主布局-->
-        <android.support.design.widget.CoordinatorLayout
-            android:id="@+id/activity_main_coordinator_layout"
+        <FrameLayout
+            android:id="@+id/activity_main_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <include layout="@layout/activity_top_songs" />
-        </android.support.design.widget.CoordinatorLayout>
+            android:layout_height="match_parent"/>
         <!--侧滑菜单-->
         <android.support.design.widget.NavigationView
             android:id="@+id/activity_main_navigationView"
