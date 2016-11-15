@@ -1,88 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.iboxshare.testgyroscope.MainActivity">
+    android:gravity="center">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <TextView
-            android:id="@+id/loc_x"
-            android:layout_weight="0.33"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="x"/>
-        <TextView
-            android:id="@+id/loc_y"
-            android:layout_weight="0.33"
-            android:layout_width="0dp"
+            android:gravity="center"
+            android:text= "请选择游戏模式"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="y"/>
-        <TextView
-            android:id="@+id/loc_z"
-            android:layout_weight="0.33"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="z"/>
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/activity_main_motion_sensoring_mode_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="体感模式"/>
+            <Button
+                android:id="@+id/activity_main_button_mode_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="按键模式"/>
+        </LinearLayout>
     </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <TextView
-        android:id="@+id/g_x"
-        android:layout_weight="0.33"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="gx"/>
-    <TextView
-        android:id="@+id/g_y"
-        android:layout_weight="0.33"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="gy"/>
-    <TextView
-        android:id="@+id/g_z"
-        android:layout_weight="0.33"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="gz"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/gyroscope_x"
-            android:layout_weight="0.33"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/gyroscope_y"
-            android:layout_weight="0.33"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/gyroscope_z"
-            android:layout_weight="0.33"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <TextView
-        android:id="@+id/show_direction_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="设备移动方向"/>
 </LinearLayout>
